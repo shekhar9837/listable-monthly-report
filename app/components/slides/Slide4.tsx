@@ -33,7 +33,7 @@ const items = [
 export default function Slide4() {
   return (
     <Slide>
-      <div className="flex h-full flex-col gap-">
+      <div className="flex h-full flex-col gap-6 p-8 md:p-12">
         <motion.p initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}

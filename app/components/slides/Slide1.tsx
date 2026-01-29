@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 export default function Slide1() {
   return (
     <Slide>
-      <div className="relative h-full ">
+      <div className="relative h-full p-8 md:p-11">
         <div className="relative z-10 flex h-full w-full flex-col justify-start gap-5">
           <motion.h1
             initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
@@ -32,7 +32,7 @@ export default function Slide1() {
             whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
             viewport={{ once: true }}
-            className="absolute bottom-[38%]  flex items-center gap-8 text-sm text-black/60"
+            className="absolute bottom-[36%] tracking-tight flex items-center gap-8 text-sm text-black/60"
           >
             <span className="flex items-center gap-2">
               <Image
@@ -53,7 +53,7 @@ export default function Slide1() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeInOut", delay: 0.2 }}
           viewport={{ once: true }}
-          className="absolute bottom-0 left-0 right-0  pointer-events-none  md:-left-13 md:-right-13 "
+          className="absolute bottom-0 left-0 right-0  pointer-events-none  md:-left-1 md:-right-1 "
         >
           <svg
             viewBox="0 0 1920 834"
@@ -199,9 +199,15 @@ export default function Slide1() {
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3 }}
           viewport={{ once: true }}
-          className="absolute bottom-0 right-2 flex items-center gap-2 text-xs text-muted"
+          className="absolute bottom-11 right-11 flex items-center gap-2 text-xs text-muted"
         >
-          <span className="font-medium text-2xl">Searchable</span>
+          <Image
+            alt="Searchable"
+            src="https://app.searchable.com/searchable-dark.svg"
+            className=" text-3xl rounded-sm"
+            width={130}
+            height={130}
+          />
         </motion.div>
       </div>
     </Slide>

@@ -29,7 +29,7 @@ export default function ReportShell({
           {children}
         </div>
 
-        <div className="fixed right-6 top-1/2 z-20 -translate-y-1/2">
+        <div className="fixed right-4 top-1/2 z-20 -translate-y-1/2">
           <div className="flex flex-col items-center gap-2">
             {progressDots.map((dot) => (
               <button
@@ -47,7 +47,7 @@ export default function ReportShell({
           </div>
         </div>
 
-        <div className="fixed bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2">
+        <div className="fixed bottom-6 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2 tracking-tighter font-medium">
           <span className="font-mono p-2 border border-stone-300 bg-white rounded-lg px-3 py-1.5 text-sm text-stone-500 shadow-sm">
             space
           </span>

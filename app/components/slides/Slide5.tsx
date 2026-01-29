@@ -38,7 +38,7 @@ export default function Slide5() {
 
   return (
     <Slide>
-      <div className="flex h-full flex-col gap-2">
+      <div className="flex h-full flex-col gap-2 p-8 md:p-12">
         <motion.p
           {...fadeUp}
           className="text-sm uppercase text-secondary tracking-tight font-semibold"

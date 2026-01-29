@@ -58,7 +58,7 @@ const toneStyles = {
 export default function Slide2() {
   return (
     <Slide>
-      <div className="flex h-full flex-col gap-2">
+      <div className="flex h-full flex-col gap-2 p-8 md:p-12">
         <motion.div
           initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}

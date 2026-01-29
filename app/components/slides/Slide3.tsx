@@ -30,7 +30,7 @@ export default function Slide3() {
 
   return (
     <Slide>
-      <div className="flex h-full flex-col gap-6">
+      <div className="flex h-full flex-col gap-6 p-8 md:p-12">
         <motion.div
           initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}

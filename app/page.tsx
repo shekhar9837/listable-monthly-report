@@ -92,7 +92,7 @@ export default function Home() {
             className="w-full snap-center"
           >
             <div className="flex min-h-[calc(100vh-96px)] items-center justify-center">
-              <div className="bg-white relative flex w-full max-w-7xl aspect-video flex-col bg-report p-8 text-black shadow-soft md:p-12">
+              <div className="bg-white relative flex w-full max-w-7xl aspect-video flex-col bg-report text-black shadow-soft">
                 <SlideComponent />
               </div>
             </div>
