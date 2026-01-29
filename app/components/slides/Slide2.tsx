@@ -58,7 +58,7 @@ const toneStyles = {
 export default function Slide2() {
   return (
     <Slide>
-      <div className="flex h-full flex-col gap-2 p-8 md:p-12">
+      <div className="flex h-full flex-col  p-8 md:p-11">
         <motion.div
           initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
@@ -71,7 +71,7 @@ export default function Slide2() {
               backgroundColor: "rgba(47, 179, 83, 0.082)",
               color: "rgb(47, 179, 83)",
             }}
-            className="text-xs font-medium tracking-wide uppercase px-2 py-1 rounded"
+            className="text-xs font-medium tracking-wide uppercase px-2 py-1 rounded-full"
           >
             MONTHLY REPORT
           </span>
@@ -85,18 +85,18 @@ export default function Slide2() {
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           transition={{ duration: 0.6, ease: "easeInOut", delay: 0.05 }}
           viewport={{ once: true }}
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 mt-3"
         >
-          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-red text-[11px] text-white">
+          <span className="flex  items-center justify-center rounded-full bg-red text-[11px] text-white">
             <Image
               alt=""
-              className=" rounded-sm"
+              className=" rounded-xl"
               src="https://www.google.com/s2/favicons?domain=groop.in&amp;sz=32"
-              width={50}
-              height={50}
+              width={30}
+              height={30}
             />
           </span>
-          <h2 className="text-3xl md:text-4xl font-medium leading-tight tracking-tight flex items-center gap-3">
+          <h2 className="text-3xl md:text-4xl text-primary font-medium leading-tight tracking-tight flex items-center gap-3">
             Groop Monthly Performance
           </h2>
         </motion.div>

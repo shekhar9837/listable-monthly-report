@@ -38,7 +38,7 @@ export default function Slide5() {
 
   return (
     <Slide>
-      <div className="flex h-full flex-col gap-2 p-8 md:p-12">
+      <div className="flex h-full flex-col  p-8 md:p-11">
         <motion.p
           {...fadeUp}
           className="text-sm uppercase text-secondary tracking-tight font-semibold"
@@ -47,22 +47,22 @@ export default function Slide5() {
         </motion.p>
         <motion.h2
           {...fadeUp}
-          className="flex items-center gap-2 text-3xl md:text-4xl font-medium leading-tight tracking-tight text-primary"
+          className="flex items-center gap-2 text-3xl md:text-4xl font-medium leading-tight tracking-tight text-primary mt-3"
         >
           How
           {/* <span className="flex h-6 w-6 i rounded-full bg-red text-[11px] text-white"> */}
           <Image
             alt=""
-            className="w-8 h-8 rounded-sm"
+            className="w-8 h-8 rounded-xl"
             src="https://www.google.com/s2/favicons?domain=groop.in&amp;sz=32"
-            width={50}
-            height={8}
+            width={30}
+            height={30}
           />
           {/* </span> */}
           Groop compares
         </motion.h2>
 
-        <div className="grid flex-1 grid-cols-[1.1fr_1fr] gap-8 mt-4 md:mt-28">
+        <div className="grid flex-1 grid-cols-[1.1fr_1fr]  mt-4 md:mt-32">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -77,7 +77,7 @@ export default function Slide5() {
                 whileInView={{ opacity: 1, filter: "blur(0px)", x: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 + index * 0.08 }}
                 viewport={{ once: true }}
-                className="flex  items-start w-full  justify-between gap-4 border-b border-border pb-4 text-sm"
+                className="flex  items-start w-full  justify-between border-b border-border pb-2 text-sm"
               >
                 <div className="w-[75%]">
                   <p className="font-medium text-secondary  tracking-tight">
@@ -111,11 +111,11 @@ export default function Slide5() {
             ))}
           </motion.div>
 
-          <motion.div {...fadeUp} className="flex flex-col items-start gap-2">
+          <motion.div {...fadeUp} className="flex flex-col items-start gap-2 ml-8">
             <p className="text-xs uppercase text-secondary tracking-tight font-semibold">
               Visibility Spectrum
             </p>
-            <div className="w-full flex flex-col items-center gap-4">
+            <div className="w-full flex flex-col items-center ">
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
